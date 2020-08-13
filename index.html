@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de compras</title>
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
+
+  <!--Custom css-->
+  <link rel="stylesheet" href="./estilos/estilos.css" />
+</head>
+
+<body id="body">
+  <nav class="navbar">
+    <div class="navbar-center">
+      <span class="nav-icon">
+        <i class="fas fa-bars"></i>
+      </span>
+      <img src="./images/logo.svg" alt="logo" />
+      <!-- Modo nocturno -->
+      <div id="nocturno" onclick="modoNocturno()">
+        <i class="fas fa-moon botonNocturno"></i>
+      </div>
+      <!-- Iniciar sesión -->
+      <div>
+        <a href="./inicioSesion.html" target="_blank">
+          <i class="fas fa-user-alt"></i>
+        </a>
+      </div>
+      <div class="cart-btn">
+        <span class="nav-icon">
+          <i class="fas fa-cart-plus"></i>
+        </span>
+        <div class="cart-items">0</div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="banner" id="banner">
+      <h1 class="banner-title">Furniture Collection</h1>
+      <button class="banner-btn">Shop now</button>
+    </div>
+  </header>
+  <!--Products-->
+  <section class="products">
+    <div class="section-title">
+      <h2>Our products</h2>
+    </div>
+    <div class="products-center"></div>
+  </section>
+  <!--End of Products-->
+  <!--Cart-->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fa fa-window-close"></i>
+      </span>
+      <h2>Your cart</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+
+        <!-- <div class="cart-item">
+          
+        </div>
+      -->
+
+        <!--End of cart item-->
+      </div>
+      <div class="cart-footer">
+        <h3>your total : $ <span class="cart-total">0</span></h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+      </div>
+    </div>
+  </div>
+  <!--End of cart -->
+
+  <script src="./js/script.js"></script>
+</body>
+<!--
+    Video del proyecto
+    <p>vou no minuto 3h:45min:50
+        <a href="https://www.youtube.com/watch?v=023Psne_-_4">Página de como crear un ecommerce con js</a>
+    </p>
+-->
+<!-- Administración de datos, muy buena, revisar -->
+<!-- https://www.contentful.com/developers/docs/ -->
+
+</html>

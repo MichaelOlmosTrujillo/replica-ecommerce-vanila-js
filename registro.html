@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/registro.css" />
+    <title>Registro</title>
+  </head>
+
+  <body>
+    <h1>Registro</h1>
+    <hr />
+
+    <h3 class="msjIncorrecto" id="msjIncorrecto" hidden></h3>
+
+    <form
+      action="./inicioSesion.html"
+      id="registro"
+      name="registro"
+      onsubmit=" return enviarDatos()"
+    >
+      <div>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Ingresa tu nombre"
+        />
+      </div>
+      <div>
+        <input
+          type="text"
+          id="apellido"
+          name="apellido"
+          placeholder="Ingresa tu apellido"
+        />
+      </div>
+      <div>
+        <input
+          type="number"
+          id="documento"
+          name="documento"
+          placeholder="Ingresa tu número de documento"
+          maxlength="10"
+        />
+      </div>
+      <div>
+        <input type="date" id="fechaNacimiento" name="fecha de nacimiento" />
+      </div>
+      <div>
+        <label for="ciudad">Ciudad</label>
+        <select name="" id="ciudad">
+          <option value="bogota">Bogotá</option>
+          <option value="barranquilla">Barranquilla</option>
+          <option value="medellin">Medellín</option>
+        </select>
+      </div>
+      <!-- <div class="checkboxForm">
+            <label for="Genero">Genero</label>
+            <div>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="masculino" name="Genero">
+            </div>
+            <div>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="femenino" name="Genero">
+            </div>
+            <div>
+                <label for="otro">Otro</label>
+                <input type="radio" id="otro" name="Genero">
+            </div>
+        </div> -->
+      <div>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+        />
+        <!-- minlength="8"  -->
+      </div>
+      <div>
+        <label for="terminos">Acepta términos y condiciones</label>
+        <input type="checkbox" name="terminos" id="terminos" />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    <!-- <a href=""></a> -->
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>
